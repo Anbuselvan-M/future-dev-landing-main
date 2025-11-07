@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Portfolio Design System - Dark theme with warm accents */
+
+@layer base {
+  :root {
+    /* Dark portfolio theme */
+    --background: 222 84% 3%;
+    --foreground: 210 40% 98%;
+    
+    --card: 222 84% 5%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 222 84% 5%;
+    --popover-foreground: 210 40% 98%;
+    
+    --primary: 32 98% 60%;
+    --primary-foreground: 222 84% 3%;
+    
+    --secondary: 222 84% 8%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --muted: 222 84% 7%;
+    --muted-foreground: 215 20% 65%;
+    
+    --accent: 32 98% 60%;
+    --accent-foreground: 222 84% 3%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 222 84% 8%;
+    --input: 222 84% 8%;
+    --ring: 32 98% 60%;
+    
+    --radius: 0.75rem;
+    
+    /* Portfolio specific colors */
+    --hero-gradient: linear-gradient(135deg, hsl(222 84% 3%), hsl(222 84% 5%));
+    --accent-gradient: linear-gradient(135deg, hsl(32 98% 60%), hsl(28 90% 55%));
+    --card-gradient: linear-gradient(135deg, hsl(222 84% 5%), hsl(222 84% 7%));
+    --text-gradient: linear-gradient(135deg, hsl(32 98% 60%), hsl(28 90% 55%));
+    
+    /* Shadows and effects */
+    --shadow-glow: 0 0 40px hsl(32 98% 60% / 0.15);
+    --shadow-card: 0 8px 32px hsl(222 84% 0% / 0.3);
+    --shadow-elegant: 0 10px 30px -10px hsl(32 98% 60% / 0.2);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
